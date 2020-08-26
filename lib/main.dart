@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_custom_widgets/widgets/custom_checkbox.dart';
+import 'package:flutter_custom_widgets/widgets/cutom_tabs.dart';
 
 void main() {
   runApp(MyApp());
@@ -11,9 +12,9 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        body: Container(
-          child: Center(
-            child: CustomCheckbox(),
+        body: SafeArea(
+          child: Container(
+            child: CustomTabs(),
           ),
         ),
       ),
